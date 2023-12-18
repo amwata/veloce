@@ -33,7 +33,7 @@
 body{
 	font-family:CentGot, Sans-Serif;
     background:var(--wtcol);
-	background: url(../imgs/palm-bg.jpg) repeat;
+	background: url(../imgs/palm-bg.png) repeat;
 	background-position:center;
 	background-size:100%;
 	background-attachment: fixed;
@@ -203,12 +203,12 @@ section{
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	background: rgba(255,255,255,0.8);
+	background: rgba(0,0,0,0.3);
 }
 .hmbg{
 	width:100%;
 	min-height:100vh;
-	background:url(../imgs/banner.png) no-repeat;
+	background:url(../imgs/x-mass.png) no-repeat;
 	background-position:70% 50%;
 	background-size:cover;
 	display:flex;
@@ -248,6 +248,16 @@ section{
 .toview .hmlogo h4{
 	transform:scaleY(1);
 	transition:transform .5s .7s ease;
+	color:var(--wtcol) ;
+	animation: flikr .5s infinite;
+}
+
+@keyframes flikr{
+	0%{color:var(--wtcol);}
+	25%{color:var(--goldcol);}
+	50%{color:var(--redcol);}
+	75%{color:var(--wtcol);}
+	100%{color:var(--grincol);}
 }
 
 .hmtxt h2{
@@ -314,7 +324,7 @@ section{
 }
 .head h2{
     position:absolute;
-    color:var(--blacol);
+    color:var(--wtcol);
     font-family:Ento;
     font-size:2.5rem;
     font-weight:lighter;
@@ -346,7 +356,7 @@ section{
 	display:flex;
 	overflow:hidden;
 	align-items:center;
-	background:url(../imgs/patternbg1.png) repeat;
+	bacdkground:url(../imgs/patternbg1.png) repeat;
 	background-size:40%;
 	padding:20px 0;
 }
@@ -504,8 +514,7 @@ img{
 	padding:10px 0;
 }
 .item-desc{
-	backgrougnd:#789;
-	padding-bottom:20px;
+	padding:20px;
 }
 .item-desc p{
 	padding:5px 0;
@@ -637,6 +646,8 @@ img{
 	position:relative;
 	overflow:hidden;
 	word-wrap:break-word;
+	border-radius: 4px;
+	background: var(--wtcol);
 }
 .item-ctn .item-box{
 	width:100%;
@@ -669,14 +680,14 @@ img{
 	margin:2rem 0;
 }
 .items-flip a{
-	color:var(--blacol);
+	color:var(--wtcol);
 	padding:7px;
 	display:block;
 	border-radius:3px;
-	box-shadow:0 0 1px 0 var(--blacol);
+	box-shadow:0 0 1px 0 var(--wtcol);
 }
 .items-flip .end{
-	color:var(--lightcol3);
+	color:var(--lightcol2);
 	box-shadow:0 0 1px 0 var(--lightcol3);
 	pointer-events:none;
 }
@@ -685,7 +696,7 @@ img{
 	background:var(--blacol);
 }
 .items-flip span{
-	color:var(--graycol);
+	color:var(--wtcol);
 	margin:0 10px;
 }
 .item-ctn .item-box .item-desc{
@@ -745,7 +756,7 @@ img{
 .git .user li a{
     font-size:.8rem;
     width:calc(100% + 3rem);
-    color:var(--blacol);
+    color:var(--wtcol);
 }
 
 .git .user li a i{
@@ -769,7 +780,7 @@ img{
 	color:var(--blacol);
 }
 .git .user li a:hover{
-	background:var(--lightcol1);
+	background:var(--blacol);
 }
 
 .git ul li a:hover{
@@ -802,7 +813,7 @@ img{
 .ctcbox .git{
 	height:100%;
 	width:calc(100% - 1rem);
-	border:3px solid var(--blacol);
+	border:3px solid var(--lightcol1);
 }
 
 .ctcbox .git .sm{
