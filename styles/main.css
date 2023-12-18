@@ -1270,6 +1270,9 @@ a img:hover, .foot .btm p a:hover > span img{
 		word-wrap:break-word;
 		padding:1rem 1rem 0;
 	}
+	.shop .shop-detail{
+		color:var(--wtcol)
+	}
 	.shop .shop-detail p{
 		padding: 10px 0;
 	}
@@ -1284,6 +1287,9 @@ a img:hover, .foot .btm p a:hover > span img{
 		display:flex;
 		align-items:center;
 		flex-wrap:nowrap;
+	}
+	.shop .shop-action .shop-cart-pm p{
+		color: var(--wtcol);
 	}
 	.shop .shop-action .shop-cart-pm div{
 		margin-left:15px;
