@@ -35,7 +35,7 @@ body{
     background:var(--wtcol);
 	background: url(../imgs/palm-bg.jpg) repeat;
 	background-position:center;
-	background-size:20%;
+	background-size:100%;
 	background-attachment: fixed;
 }
 .maxwid{
@@ -209,7 +209,7 @@ section{
 	width:100%;
 	min-height:100vh;
 	background:url(../imgs/banner.png) no-repeat;
-	background-position:90% 50%;
+	background-position:70% 50%;
 	background-size:cover;
 	display:flex;
 	justify-content:center;
